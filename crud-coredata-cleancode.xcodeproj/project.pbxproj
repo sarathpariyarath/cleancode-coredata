@@ -14,6 +14,11 @@
 		3726D1A62960952000B479B1 /* crud_coredata_cleancode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3726D1A42960952000B479B1 /* crud_coredata_cleancode.xcdatamodeld */; };
 		3726D1A82960952200B479B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3726D1A72960952200B479B1 /* Assets.xcassets */; };
 		3726D1AB2960952200B479B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3726D1A92960952200B479B1 /* LaunchScreen.storyboard */; };
+		3726D1B4296095BD00B479B1 /* CDEmployee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3726D1B2296095BD00B479B1 /* CDEmployee+CoreDataClass.swift */; };
+		3726D1B5296095BD00B479B1 /* CDEmployee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3726D1B3296095BD00B479B1 /* CDEmployee+CoreDataProperties.swift */; };
+		3726D1B8296095EB00B479B1 /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3726D1B7296095EB00B479B1 /* PersistentStorage.swift */; };
+		3726D1BB2960965600B479B1 /* EmployeeDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3726D1BA2960965600B479B1 /* EmployeeDataRepository.swift */; };
+		3726D1BE2960A8BE00B479B1 /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3726D1BD2960A8BE00B479B1 /* EmployeeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		3726D1A72960952200B479B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3726D1AA2960952200B479B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3726D1AC2960952200B479B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3726D1B2296095BD00B479B1 /* CDEmployee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDEmployee+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3726D1B3296095BD00B479B1 /* CDEmployee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDEmployee+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3726D1B7296095EB00B479B1 /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
+		3726D1BA2960965600B479B1 /* EmployeeDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDataRepository.swift; sourceTree = "<group>"; };
+		3726D1BD2960A8BE00B479B1 /* EmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,9 @@
 				3726D19B2960952000B479B1 /* AppDelegate.swift */,
 				3726D19D2960952000B479B1 /* SceneDelegate.swift */,
 				3726D19F2960952000B479B1 /* ViewController.swift */,
+				3726D1BC2960A8AA00B479B1 /* Model */,
+				3726D1B92960964000B479B1 /* Repository */,
+				3726D1B6296095C800B479B1 /* CoreDataSupportFiles */,
 				3726D1A12960952000B479B1 /* Main.storyboard */,
 				3726D1A72960952200B479B1 /* Assets.xcassets */,
 				3726D1A92960952200B479B1 /* LaunchScreen.storyboard */,
@@ -68,6 +81,32 @@
 				3726D1A42960952000B479B1 /* crud_coredata_cleancode.xcdatamodeld */,
 			);
 			path = "crud-coredata-cleancode";
+			sourceTree = "<group>";
+		};
+		3726D1B6296095C800B479B1 /* CoreDataSupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3726D1B2296095BD00B479B1 /* CDEmployee+CoreDataClass.swift */,
+				3726D1B3296095BD00B479B1 /* CDEmployee+CoreDataProperties.swift */,
+				3726D1B7296095EB00B479B1 /* PersistentStorage.swift */,
+			);
+			path = CoreDataSupportFiles;
+			sourceTree = "<group>";
+		};
+		3726D1B92960964000B479B1 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3726D1BA2960965600B479B1 /* EmployeeDataRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		3726D1BC2960A8AA00B479B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3726D1BD2960A8BE00B479B1 /* EmployeeModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3726D1BE2960A8BE00B479B1 /* EmployeeModel.swift in Sources */,
 				3726D1A02960952000B479B1 /* ViewController.swift in Sources */,
+				3726D1BB2960965600B479B1 /* EmployeeDataRepository.swift in Sources */,
+				3726D1B4296095BD00B479B1 /* CDEmployee+CoreDataClass.swift in Sources */,
 				3726D1A62960952000B479B1 /* crud_coredata_cleancode.xcdatamodeld in Sources */,
 				3726D19C2960952000B479B1 /* AppDelegate.swift in Sources */,
+				3726D1B5296095BD00B479B1 /* CDEmployee+CoreDataProperties.swift in Sources */,
 				3726D19E2960952000B479B1 /* SceneDelegate.swift in Sources */,
+				3726D1B8296095EB00B479B1 /* PersistentStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
