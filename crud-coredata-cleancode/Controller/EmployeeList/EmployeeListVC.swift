@@ -23,6 +23,7 @@ class EmployeeListVC: UIViewController {
         super.viewWillAppear(animated)
         self.title = "Employee List"
         employeeList = employeeManager.getAllEmployee()
+        self.tableView.reloadData()
     }
     
     func configureTableView() {
@@ -32,22 +33,5 @@ class EmployeeListVC: UIViewController {
         self.tableView.dataSource = self
     }
 
-}
-
-extension EmployeeListVC: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return employeeList?.count ?? 0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let empCell = tableView.dequeueReusableCell(withIdentifier: "employeeCell") as? EmployeeTableViewCell else {return UITableViewCell()}
-        empCell.configureCell(with: employeeList?[indexPath.row])
-        return empCell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
-    }
-    
 }
 

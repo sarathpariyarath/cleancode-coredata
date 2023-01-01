@@ -22,7 +22,7 @@ protocol EmployeeRepository {
 struct EmployeeDataRepository: EmployeeRepository {
     func create(employee: Employee) {
         let cdEmployee = CDEmployee(context: PersistentStorage.shared.context)
-        cdEmployee.id = cdEmployee.id
+        cdEmployee.id = employee.id
         cdEmployee.name = employee.name
         cdEmployee.email = employee.email
         cdEmployee.avatarImg = employee.avatarImg

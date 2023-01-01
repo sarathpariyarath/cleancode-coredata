@@ -23,6 +23,8 @@
 		3726D1C62960DDB600B479B1 /* EmployeeListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3726D1C52960DDB600B479B1 /* EmployeeListVC.swift */; };
 		3726D1CA2960DF0C00B479B1 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3726D1C82960DF0C00B479B1 /* EmployeeTableViewCell.swift */; };
 		3726D1CB2960DF0C00B479B1 /* EmployeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3726D1C92960DF0C00B479B1 /* EmployeeTableViewCell.xib */; };
+		3726D1D02962110100B479B1 /* EmployeeListVC + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3726D1CF2962110100B479B1 /* EmployeeListVC + Extensions.swift */; };
+		3726D1D22962127400B479B1 /* ManageEmployeeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3726D1D12962127400B479B1 /* ManageEmployeeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		3726D1C52960DDB600B479B1 /* EmployeeListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListVC.swift; sourceTree = "<group>"; };
 		3726D1C82960DF0C00B479B1 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
 		3726D1C92960DF0C00B479B1 /* EmployeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTableViewCell.xib; sourceTree = "<group>"; };
+		3726D1CF2962110100B479B1 /* EmployeeListVC + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmployeeListVC + Extensions.swift"; sourceTree = "<group>"; };
+		3726D1D12962127400B479B1 /* ManageEmployeeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageEmployeeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 				3726D19B2960952000B479B1 /* AppDelegate.swift */,
 				3726D19D2960952000B479B1 /* SceneDelegate.swift */,
 				3726D1C22960DD3200B479B1 /* Controller */,
+				3726D1D12962127400B479B1 /* ManageEmployeeVC.swift */,
 				3726D1BF2960A99400B479B1 /* Manager */,
 				3726D1BC2960A8AA00B479B1 /* Model */,
 				3726D1B92960964000B479B1 /* Repository */,
@@ -129,9 +134,8 @@
 		3726D1C22960DD3200B479B1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3726D1C72960DEF700B479B1 /* Cell */,
 				3726D19F2960952000B479B1 /* CreateEmployeeVC.swift */,
-				3726D1C52960DDB600B479B1 /* EmployeeListVC.swift */,
+				3726D1CE296210E300B479B1 /* EmployeeList */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -139,10 +143,20 @@
 		3726D1C72960DEF700B479B1 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				3726D1C82960DF0C00B479B1 /* EmployeeTableViewCell.swift */,
 				3726D1C92960DF0C00B479B1 /* EmployeeTableViewCell.xib */,
+				3726D1C82960DF0C00B479B1 /* EmployeeTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		3726D1CE296210E300B479B1 /* EmployeeList */ = {
+			isa = PBXGroup;
+			children = (
+				3726D1C72960DEF700B479B1 /* Cell */,
+				3726D1C52960DDB600B479B1 /* EmployeeListVC.swift */,
+				3726D1CF2962110100B479B1 /* EmployeeListVC + Extensions.swift */,
+			);
+			path = EmployeeList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +243,8 @@
 				3726D1B5296095BD00B479B1 /* CDEmployee+CoreDataProperties.swift in Sources */,
 				3726D19E2960952000B479B1 /* SceneDelegate.swift in Sources */,
 				3726D1B8296095EB00B479B1 /* PersistentStorage.swift in Sources */,
+				3726D1D02962110100B479B1 /* EmployeeListVC + Extensions.swift in Sources */,
+				3726D1D22962127400B479B1 /* ManageEmployeeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
